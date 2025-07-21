@@ -17,37 +17,6 @@ Prototyper un MVP d'application de recommandation d'articles à destination des 
 
 ---
 
-## 🧱 Architecture du projet
-
-systeme_reco/
-│
-├── app_flask/ # Interface web utilisateur (Flask)
-│ ├── app.py
-│ ├── templates/
-│ └── static/
-│
-├── azure_function/ # Azure Function (serverless)
-│ ├── function_app.py
-│ ├── requirements.txt
-│ ├── local.settings.json (local uniquement)
-│ └── host.json
-│
-├── data/ # Données statiques (non versionnées)
-│ ├── articles_metadata.csv
-│ ├── clicks_sample.csv
-│ └── articles_embeddings.pickle
-│
-├── notebooks/ # Analyses et prototypage
-│ └── analyse_explo_et_modeles.ipynb
-│
-├── tests/ # À compléter si besoin
-├── reco/ # Dossier technique si besoin d’extensions
-├── requirements.txt # Dépendances principales
-└── README.md
-
-
----
-
 ## 🛠 Lancer le projet en local
 
 ### 🔹 Prérequis
@@ -55,8 +24,9 @@ systeme_reco/
 - Azure Functions Core Tools
 - Environnement virtuel (recommandé)
 
-### 🔹 1. Installer les dépendances
 ```bash
+1. Installer les dépendances
+
 python -m venv reco
 source reco/bin/activate  # ou .\reco\Scripts\activate sous Windows
 pip install -r requirements.txt
