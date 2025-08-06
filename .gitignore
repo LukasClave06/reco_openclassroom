@@ -10,7 +10,7 @@ __pycache__/
 # Environnement virtuel
 venv/
 .reco/  # ou le nom exact de ton env virtuel
-
+.reco
 # Fichiers lourds ou sensibles
 *.pickle
 *.pkl
